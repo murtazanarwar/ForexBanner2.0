@@ -1,0 +1,27 @@
+.card {
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  transition: transform 0.2s;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: scale(0.95);
+}
+
+.currencyPair {
+  transition: color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.currencyPair:hover {
+  color: #d39797;
+  transform: scale(1.1);
+}

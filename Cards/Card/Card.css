@@ -30,7 +30,6 @@
   cursor: pointer; /* Change the cursor to a pointer when hovering over elements with this class */
 }
 
-/* This is a hover state for the "currencyPair" class */
 .currencyPair:hover {
   color: #d39797; /* Change the text color to a specific shade of red on hover */
   transform: scale(

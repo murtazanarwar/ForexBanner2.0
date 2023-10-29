@@ -1,27 +1,39 @@
 .card {
   width: 200px;
   height: 200px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Set a semi-transparent white background */
   color: #ffffff;
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
   position: relative;
-  transition: transform 0.2s;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s; /* Add a smooth transition effect to the transform property */
+  backdrop-filter: blur(
+    10px
+  ); /* Apply a 10px blur filter to the card background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
 }
 
 .card:hover {
-  transform: scale(0.95);
+  transform: scale(
+    0.95
+  ); /* Scale down the card to 95% of its original size on hover */
 }
 
 .currencyPair {
-  transition: color 0.3s, transform 0.3s;
-  cursor: pointer;
+  transition: color 0.3s, transform 0.3s; /* Add smooth transitions to the color and transform properties */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over elements with this class */
 }
 
+/* This is a hover state for the "currencyPair" class */
 .currencyPair:hover {
-  color: #d39797;
-  transform: scale(1.1);
+  color: #d39797; /* Change the text color to a specific shade of red on hover */
+  transform: scale(
+    1.1
+  ); /* Scale up the element to 110% of its original size on hover */
 }

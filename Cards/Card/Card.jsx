@@ -9,9 +9,11 @@ function NumberCounter({ targetValue, decimals }) {
     const interval = setInterval(() => {
       if (parseFloat(count) < targetValue) {
         setCount((prevCount) => {
+          // Calculate the next count and apply decimal precision
           const nextCount = (
             parseFloat(prevCount) + parseFloat(increment)
           ).toFixed(decimals);
+          // Ensure the final count does not exceed the target value
           return parseFloat(nextCount) > targetValue
             ? targetValue.toFixed(decimals)
             : nextCount;
@@ -31,7 +33,10 @@ const Card = ({ targetValue, currencyPair }) => {
 
   return (
     <div className="card">
-      <h1 className="currencyPair">{currencyPair.replace("USD", "")}</h1>
+      <h1 className="currencyPair">
+        {currencyPair.replace("USD", "")}{" "}
+        {/* Display the currency pair with "USD" removed */}
+      </h1>
       <div className="count-container">
         <NumberCounter targetValue={targetValue} decimals={decimals} />
       </div>
